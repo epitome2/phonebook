@@ -1,0 +1,5 @@
+#surefire
+#Mon Jul 16 22:15:41 EDT 2012
+user.dir=/Users/amar/Developer/Java/phonebook/phonebook-domain
+localRepository=/Users/amar/.m2/repository
+basedir=/Users/amar/Developer/Java/phonebook/phonebook-domain
