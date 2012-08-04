@@ -28,5 +28,7 @@
   <modules>
     <module>phonebook-domain</module>
     <module>phonebook-web</module>
+    <module>phonebook-service</module>
+    <module>phonebook-ear</module>
   </modules>
 </project>
