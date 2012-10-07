@@ -6,15 +6,24 @@
     xmlns:h="http://java.sun.com/jsf/html">
  
 <h:head>
-    <title>JSF Demo</title>
+    <title>Contact List</title>
 </h:head>
 <h:body>
     <h:outputScript name="jsf.js" library="javax.faces" target="body">
+    
     </h:outputScript>
-    <h1>JSF 2 Demo</h1>
+    <h1>Contact List</h1>
     <h:form>
-		<h:outputText value="Hello World!"/>
+		CDI says: <h:outputText value="#{clb.message}"/>
+		<h:commandButton action="#{clb.processContactSearch}" value="Search"/>
+		<h:dataTable value="#{clb.searchResult}" var="contact">
+			<h:column>
+    				<!-- column header -->
+    				<f:facet name="header">First Name</f:facet>
+    				<!-- row record -->
+    				#{contact.firstName}
+    			</h:column>
+		</h:dataTable>
     </h:form>
- 
 </h:body>
 </html>
