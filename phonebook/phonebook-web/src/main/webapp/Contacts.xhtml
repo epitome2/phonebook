@@ -16,6 +16,7 @@
     <h:form>
 		CDI says: <h:outputText value="#{clb.message}"/>
 		<h:commandButton action="#{clb.processContactSearch}" value="Search"/>
+		<h:commandButton action="#{clb.processCreateNew}" value="Create New"/>
 		<h:dataTable value="#{clb.searchResult}" var="contact">
 			<h:column>
     				<!-- column header -->

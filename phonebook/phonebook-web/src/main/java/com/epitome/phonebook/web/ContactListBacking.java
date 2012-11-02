@@ -39,14 +39,7 @@ public class ContactListBacking {
 	
 	public String processContactSearch() {
 		log.debug("Processing contactSearch");
-		//searchResult = contactService.search(searchCriteria);
-		List<Contact> contacts = new ArrayList<Contact>();
-		Contact contact = new Contact();
-		contact.setFirstName("Amar");
-		contact.setLastName("Nandigam");
-		contact.setIdentity(1);
-		contacts.add(contact);
-		searchResult = contacts;
+		searchResult = contactService.search(searchCriteria);
 		return null;
 	}
 
@@ -64,6 +57,12 @@ public class ContactListBacking {
 
 	public void setSearchResult(List<Contact> searchResult) {
 		this.searchResult = searchResult;
+	}
+	
+	public String processCreateNew() {
+		log.debug("Processing Create New Contact");
+		contactService.createNew();
+		return null;
 	}
 	
 	

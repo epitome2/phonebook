@@ -8,5 +8,7 @@ public interface ContactService {
 	public List<Contact> search(Contact contact);
 	
 	public Contact select(Contact contact);
+	
+	public void createNew();
 
 }
